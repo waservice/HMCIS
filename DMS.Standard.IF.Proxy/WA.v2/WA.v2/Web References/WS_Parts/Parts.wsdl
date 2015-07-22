@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://wa.dms.webservice/" xmlns:s0="http://wa.dms.webservice/PartsGetRequest" xmlns:s1="http://wa.dms.webservice/PartsGetResponse" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://wa.dms.webservice/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://wa.dms.webservice/PartsGetRequest">
+      <s:element name="PartsGetRequest" nillable="true" type="s0:PartsGetRequest" />
+      <s:complexType name="PartsGetRequest">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionHeader" type="s0:TransactionHeader" />
+          <s:element minOccurs="0" maxOccurs="1" name="PartsGet" type="s0:PartsGet" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TransactionHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CountryID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DistributorID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GroupID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DealerID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DMSCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DMSVersion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DMSServerUrl" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DocumentVersion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TransactionDateTimeUTC" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="TransactionDateTimeLocal" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RequestType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RequestPollingToken" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VenderTrackingCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IneterfaceID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PollingToken" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PartsGet">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Manufacturer" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PartNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PartDescription" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Make" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Model" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Year" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Engine" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Mileage" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Category" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://wa.dms.webservice/PartsGetResponse">
+      <s:element name="PartsGetResponse" nillable="true" type="s1:PartsGetResponse" />
+      <s:complexType name="PartsGetResponse">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionHeader" type="s1:TransactionHeader" />
+          <s:element minOccurs="0" maxOccurs="1" name="ResultMessage" type="s1:ResultMessage" />
+          <s:element minOccurs="0" maxOccurs="1" name="Errors" type="s1:ArrayOfError" />
+          <s:element minOccurs="0" maxOccurs="1" name="Parts" type="s1:ArrayOfPart" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TransactionHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CountryID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DistributorID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GroupID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DealerID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DMSCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DMSVersion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DMSServerUrl" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DocumentVersion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TransactionDateTimeUTC" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="TransactionDateTimeLocal" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RequestType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RequestPollingToken" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VenderTrackingCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IneterfaceID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PollingToken" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ResultMessage">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Message" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfError">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Error" nillable="true" type="s1:Error" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Error">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Message" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfPart">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Part" nillable="true" type="s1:Part" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Part">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Manufacturer" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PartNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PartDescription" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Make" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PartStatus" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PartType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="QuantityOnHand" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StockStatus" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DisplayPartNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Remarks" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UnitOfMeasure" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StockQuantity" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Quantity" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DisplayRemarks" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PriceType" type="s1:PriceType" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PriceType">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="UnitPrice" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TotalPrice" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TotalPriceIncludeTax" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DiscountRate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DiscountPrice" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="PartsGetSoapIn">
+    <wsdl:part name="request" element="s0:PartsGetRequest" />
+  </wsdl:message>
+  <wsdl:message name="PartsGetSoapOut">
+    <wsdl:part name="PartsGetResult" element="s1:PartsGetResponse" />
+  </wsdl:message>
+  <wsdl:portType name="PartsSoap">
+    <wsdl:operation name="PartsGet">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">IF-DMS-PART-R01/Parts Get</wsdl:documentation>
+      <wsdl:input message="tns:PartsGetSoapIn" />
+      <wsdl:output message="tns:PartsGetSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PartsSoap" type="tns:PartsSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PartsGet">
+      <soap:operation soapAction="http://wa.dms.webservice/PartsGet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PartsSoap12" type="tns:PartsSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PartsGet">
+      <soap12:operation soapAction="http://wa.dms.webservice/PartsGet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Parts">
+    <wsdl:port name="PartsSoap" binding="tns:PartsSoap">
+      <soap:address location="http://127.0.0.1:9099/v2/Common/Parts.asmx" />
+    </wsdl:port>
+    <wsdl:port name="PartsSoap12" binding="tns:PartsSoap12">
+      <soap12:address location="http://127.0.0.1:9099/v2/Common/Parts.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://wa.dms.webservice/" xmlns:s0="http://wa.dms.webservice/EmployeeGetRequest" xmlns:s1="http://wa.dms.webservice/EmployeeGetResponse" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://wa.dms.webservice/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://wa.dms.webservice/EmployeeGetRequest">
+      <s:element name="EmployeeGetRequest" nillable="true" type="s0:EmployeeGetRequest" />
+      <s:complexType name="EmployeeGetRequest">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionHeader" type="s0:TransactionHeader" />
+          <s:element minOccurs="0" maxOccurs="1" name="EmployeeGet" type="s0:EmployeeGet" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TransactionHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CountryID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DistributorID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GroupID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DealerID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DMSCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DMSVersion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DMSServerUrl" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DocumentVersion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TransactionDateTimeUTC" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="TransactionDateTimeLocal" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RequestType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RequestPollingToken" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VenderTrackingCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IneterfaceID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PollingToken" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="EmployeeGet">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="DMSEmployeeNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LoginID" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="LastModifiedDateTimeFromUTC" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="LastModifiedDateTimeToUTC" nillable="true" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://wa.dms.webservice/EmployeeGetResponse">
+      <s:element name="EmployeeGetResponse" nillable="true" type="s1:EmployeeGetResponse" />
+      <s:complexType name="EmployeeGetResponse">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionHeader" type="s1:TransactionHeader" />
+          <s:element minOccurs="0" maxOccurs="1" name="ResultMessage" type="s1:ResultMessage" />
+          <s:element minOccurs="0" maxOccurs="1" name="Errors" type="s1:ArrayOfError" />
+          <s:element minOccurs="0" maxOccurs="1" name="Employees" type="s1:ArrayOfEmployee" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TransactionHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CountryID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DistributorID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GroupID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DealerID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DMSCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DMSVersion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DMSServerUrl" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DocumentVersion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TransactionDateTimeUTC" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="TransactionDateTimeLocal" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RequestType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RequestPollingToken" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VenderTrackingCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IneterfaceID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PollingToken" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ResultMessage">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Message" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfError">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Error" nillable="true" type="s1:Error" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Error">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Message" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfEmployee">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Employee" nillable="true" type="s1:Employee" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Employee">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="DMSEmployeeNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MiddleName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FullName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Salution" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Gender" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Language" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SkillsetString" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Title" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MobileNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PhoneNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LoginID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LoginPassword" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EmployeeStatus" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Group" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ManagementFields" type="s1:ManagementFields" />
+          <s:element minOccurs="0" maxOccurs="1" name="Roles" type="s1:ArrayOfRole" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ManagementFields">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CreateDateTimeUTC" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="LastModifiedDateTimeUTC" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfRole">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Role" nillable="true" type="s1:Role" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Role">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="RoleName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RoleUserID" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="EmployeeGetSoapIn">
+    <wsdl:part name="request" element="s0:EmployeeGetRequest" />
+  </wsdl:message>
+  <wsdl:message name="EmployeeGetSoapOut">
+    <wsdl:part name="EmployeeGetResult" element="s1:EmployeeGetResponse" />
+  </wsdl:message>
+  <wsdl:portType name="EmployeeSoap">
+    <wsdl:operation name="EmployeeGet">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">IF-DMS-EMP-R01/Employee Get</wsdl:documentation>
+      <wsdl:input message="tns:EmployeeGetSoapIn" />
+      <wsdl:output message="tns:EmployeeGetSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="EmployeeSoap" type="tns:EmployeeSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="EmployeeGet">
+      <soap:operation soapAction="http://wa.dms.webservice/EmployeeGet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="EmployeeSoap12" type="tns:EmployeeSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="EmployeeGet">
+      <soap12:operation soapAction="http://wa.dms.webservice/EmployeeGet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Employee">
+    <wsdl:port name="EmployeeSoap" binding="tns:EmployeeSoap">
+      <soap:address location="http://127.0.0.1:9099/v2/Common/Employee.asmx" />
+    </wsdl:port>
+    <wsdl:port name="EmployeeSoap12" binding="tns:EmployeeSoap12">
+      <soap12:address location="http://127.0.0.1:9099/v2/Common/Employee.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,916 @@
+﻿<CustomerVehicles>
+  <CustomerVehicle>
+    <Customer>
+      <CustomerInfoType>1</CustomerInfoType>
+      <DMSCustomerNo>ЦБ009695</DMSCustomerNo>
+      <LastName>Гавриченков</LastName>
+      <MiddleName>Анатольевич</MiddleName>
+      <FirstName>Алексей</FirstName>
+      <FullName>Гавриченков Алексей Анатольевич</FullName>
+      <Salutation>г-н</Salutation>
+      <Gender>1</Gender>
+      <CardNo/>
+      <Email>111@wa.com</Email>
+      <Addresses>
+        <Address>
+          <AddressType>1</AddressType>
+          <FullAddress>143401, Московская обл, Красногорск г, Школьная ул, дом №16, кв.29</FullAddress>
+          <ZipCode>143401</ZipCode>
+          <Region>Московская обл</Region>
+          <District/>
+          <City>Красногорск г</City>
+          <Locality/>
+          <Street>Школьная ул</Street>
+          <House>16</House>
+          <Housing/>
+          <Flat>29</Flat>
+        </Address>
+        <Address>
+          <AddressType>2</AddressType>
+          <FullAddress>143401, Московская обл, Красногорск г, Школьная ул, дом №16, кв.29</FullAddress>
+          <ZipCode>143401</ZipCode>
+          <Region>Московская обл</Region>
+          <District/>
+          <City>Красногорск г</City>
+          <Locality/>
+          <Street>Школьная ул</Street>
+          <House>16</House>
+          <Housing/>
+          <Flat>29</Flat>
+        </Address>
+      </Addresses>
+      <Contacts>
+        <Contact>
+          <ContactType>2</ContactType>
+          <ContactValue>+7 (985) 9216923</ContactValue>
+          <ContactMethodYN>N</ContactMethodYN>
+        </Contact>
+        <Contact>
+          <ContactType>1</ContactType>
+          <ContactValue>+7(495)5661045</ContactValue>
+          <ContactMethodYN>N</ContactMethodYN>
+        </Contact>
+      </Contacts>
+      <SpecialMessage>
+        <Message/>
+      </SpecialMessage>
+      <CorporateInfos/>
+    </Customer>
+    <Vehicle>
+      <DMSVehicleNo>ЦБ00007451</DMSVehicleNo>
+      <VIN>KMHSH81BDCU868678</VIN>
+      <StockNumber/>
+      <LicensePlateNo>у825сс190</LicensePlateNo>
+      <Make/>
+      <ModelCode>ЦБ00000008</ModelCode>
+      <ModelName>Hyundai Santa Fe CM</ModelName>
+      <ModelYear/>
+      <LastMileage>10359</LastMileage>
+      <Color>Серый</Color>
+      <VehicleType>1</VehicleType>
+      <EngineType>2,4</EngineType>
+      <FuelType/>
+      <Cylinders/>
+      <Trim/>
+      <FullModelName>Hyundai Santa Fe CM</FullModelName>
+      <InsuranceDate>0001-01-01T00:00:00</InsuranceDate>
+      <DateInService>0001-01-01T00:00:00</DateInService>
+      <DateDelivered>0001-01-01T00:00:00</DateDelivered>
+      <WarrantyStartDate>2012-03-24T00:00:00</WarrantyStartDate>
+      <WarrantyMonths/>
+      <WarrantyMiles/>
+      <LicenseNumber/>
+      <LastServiceDate>2013-05-04T20:33:29</LastServiceDate>
+      <ExtendedWarranty>0001-01-01T00:00:00</ExtendedWarranty>
+      <DeclinedJob/>
+      <PendingJob/>
+      <DisplayDescription>Hyundai Santa Fe S6G № у825сс190 VIN KMHSH81BDCU868678</DisplayDescription>
+      <Campaigns/>
+      <ExtendedWarrantyExpireDate>0001-01-01T00:00:00</ExtendedWarrantyExpireDate>
+      <EngineNo>G4KE BU644930</EngineNo>
+    </Vehicle>
+  </CustomerVehicle>
+  <CustomerVehicle>
+    <Customer>
+      <CustomerInfoType>1</CustomerInfoType>
+      <DMSCustomerNo>00002</DMSCustomerNo>
+      <LastName>Основной</LastName>
+      <MiddleName>Unknown</MiddleName>
+      <FirstName>покупатель</FirstName>
+      <FullName>Основной покупатель</FullName>
+      <Salutation>г-н</Salutation>
+      <Gender>1</Gender>
+      <CardNo/>
+      <Email>нет</Email>
+      <Addresses>
+        <Address>
+          <AddressType>1</AddressType>
+          <FullAddress>Московская обл, Истринский р-н, п. Борзые, Центральная ул., дом №4</FullAddress>
+          <ZipCode/>
+          <Region>Московская обл</Region>
+          <District>Истринский р-н</District>
+          <City/>
+          <Locality>п. Борзые</Locality>
+          <Street>Центральная ул.</Street>
+          <House>4</House>
+          <Housing/>
+          <Flat/>
+        </Address>
+        <Address>
+          <AddressType>2</AddressType>
+          <FullAddress>Московская обл, Истринский р-н, п. Борзые, Центральная ул., дом №4</FullAddress>
+          <ZipCode/>
+          <Region>Московская обл</Region>
+          <District>Истринский р-н</District>
+          <City/>
+          <Locality>п. Борзые</Locality>
+          <Street>Центральная ул.</Street>
+          <House>4</House>
+          <Housing/>
+          <Flat/>
+        </Address>
+      </Addresses>
+      <Contacts>
+        <Contact>
+          <ContactType>3</ContactType>
+          <ContactValue>+7 (916) 9202917</ContactValue>
+          <ContactMethodYN>Y</ContactMethodYN>
+        </Contact>
+        <Contact>
+          <ContactType>2</ContactType>
+          <ContactValue>+7 (916) 9202917</ContactValue>
+          <ContactMethodYN>Y</ContactMethodYN>
+        </Contact>
+      </Contacts>
+      <SpecialMessage>
+        <Message/>
+      </SpecialMessage>
+      <CorporateInfos/>
+    </Customer>
+    <Vehicle>
+      <DMSVehicleNo>ЦБ00007317</DMSVehicleNo>
+      <VIN>KMHBU51DP9U898966</VIN>
+      <StockNumber/>
+      <LicensePlateNo>Н040ХС199</LicensePlateNo>
+      <Make/>
+      <ModelCode>ЦБ00000010</ModelCode>
+      <ModelName>Hyundai Getz</ModelName>
+      <ModelYear/>
+      <LastMileage>100</LastMileage>
+      <Color>Бежевый</Color>
+      <VehicleType>1</VehicleType>
+      <EngineType>1.4</EngineType>
+      <FuelType/>
+      <Cylinders/>
+      <Trim/>
+      <FullModelName>Hyundai Getz</FullModelName>
+      <InsuranceDate>0001-01-01T00:00:00</InsuranceDate>
+      <DateInService>0001-01-01T00:00:00</DateInService>
+      <DateDelivered>0001-01-01T00:00:00</DateDelivered>
+      <WarrantyStartDate>0001-01-01T00:00:00</WarrantyStartDate>
+      <WarrantyMonths/>
+      <WarrantyMiles/>
+      <LicenseNumber/>
+      <LastServiceDate>2012-02-08T16:31:01</LastServiceDate>
+      <ExtendedWarranty>0001-01-01T00:00:00</ExtendedWarranty>
+      <DeclinedJob/>
+      <PendingJob/>
+      <DisplayDescription>Hyundai Getz 9G (Gold beige) № Н040ХС199 VIN KMHBU51DP9U898966</DisplayDescription>
+      <Campaigns/>
+      <ExtendedWarrantyExpireDate>0001-01-01T00:00:00</ExtendedWarrantyExpireDate>
+      <EngineNo/>
+    </Vehicle>
+  </CustomerVehicle>
+  <CustomerVehicle>
+    <Customer>
+      <CustomerInfoType>1</CustomerInfoType>
+      <DMSCustomerNo>00002</DMSCustomerNo>
+      <LastName>Основной</LastName>
+      <MiddleName>Unknown</MiddleName>
+      <FirstName>покупатель</FirstName>
+      <FullName>Основной покупатель</FullName>
+      <Salutation>г-н</Salutation>
+      <Gender>1</Gender>
+      <CardNo/>
+      <Email>нет</Email>
+      <Addresses>
+        <Address>
+          <AddressType>1</AddressType>
+          <FullAddress>Московская обл, Истринский р-н, п. Борзые, Центральная ул., дом №4</FullAddress>
+          <ZipCode/>
+          <Region>Московская обл</Region>
+          <District>Истринский р-н</District>
+          <City/>
+          <Locality>п. Борзые</Locality>
+          <Street>Центральная ул.</Street>
+          <House>4</House>
+          <Housing/>
+          <Flat/>
+        </Address>
+        <Address>
+          <AddressType>2</AddressType>
+          <FullAddress>Московская обл, Истринский р-н, п. Борзые, Центральная ул., дом №4</FullAddress>
+          <ZipCode/>
+          <Region>Московская обл</Region>
+          <District>Истринский р-н</District>
+          <City/>
+          <Locality>п. Борзые</Locality>
+          <Street>Центральная ул.</Street>
+          <House>4</House>
+          <Housing/>
+          <Flat/>
+        </Address>
+      </Addresses>
+      <Contacts>
+        <Contact>
+          <ContactType>3</ContactType>
+          <ContactValue>+7 (916) 9202917</ContactValue>
+          <ContactMethodYN>Y</ContactMethodYN>
+        </Contact>
+        <Contact>
+          <ContactType>2</ContactType>
+          <ContactValue>+7 (916) 9202917</ContactValue>
+          <ContactMethodYN>Y</ContactMethodYN>
+        </Contact>
+      </Contacts>
+      <SpecialMessage>
+        <Message/>
+      </SpecialMessage>
+      <CorporateInfos/>
+    </Customer>
+    <Vehicle>
+      <DMSVehicleNo>ЦБ00017995</DMSVehicleNo>
+      <VIN>KMHJN81BP9U048083</VIN>
+      <StockNumber/>
+      <LicensePlateNo>к534еп50</LicensePlateNo>
+      <Make/>
+      <ModelCode>ЦБ00000005</ModelCode>
+      <ModelName>Hyundai Tucson</ModelName>
+      <ModelYear/>
+      <LastMileage>54572</LastMileage>
+      <Color>Серый</Color>
+      <VehicleType>1</VehicleType>
+      <EngineType>2.0</EngineType>
+      <FuelType/>
+      <Cylinders/>
+      <Trim/>
+      <FullModelName>Hyundai Tucson</FullModelName>
+      <InsuranceDate>0001-01-01T00:00:00</InsuranceDate>
+      <DateInService>0001-01-01T00:00:00</DateInService>
+      <DateDelivered>0001-01-01T00:00:00</DateDelivered>
+      <WarrantyStartDate>0001-01-01T00:00:00</WarrantyStartDate>
+      <WarrantyMonths/>
+      <WarrantyMiles/>
+      <LicenseNumber/>
+      <LastServiceDate>2014-09-09T19:47:10</LastServiceDate>
+      <ExtendedWarranty>0001-01-01T00:00:00</ExtendedWarranty>
+      <DeclinedJob/>
+      <PendingJob/>
+      <DisplayDescription>Hyundai Tucson 9A (Steel Gray) № к534еп50 VIN KMHJN81BP9U048083</DisplayDescription>
+      <Campaigns/>
+      <ExtendedWarrantyExpireDate>0001-01-01T00:00:00</ExtendedWarrantyExpireDate>
+      <EngineNo/>
+    </Vehicle>
+  </CustomerVehicle>
+  <CustomerVehicle>
+    <Customer>
+      <CustomerInfoType>1</CustomerInfoType>
+      <DMSCustomerNo>00002</DMSCustomerNo>
+      <LastName>Основной</LastName>
+      <MiddleName>Unknown</MiddleName>
+      <FirstName>покупатель</FirstName>
+      <FullName>Основной покупатель</FullName>
+      <Salutation>г-н</Salutation>
+      <Gender>1</Gender>
+      <CardNo/>
+      <Email>нет</Email>
+      <Addresses>
+        <Address>
+          <AddressType>1</AddressType>
+          <FullAddress>Московская обл, Истринский р-н, п. Борзые, Центральная ул., дом №4</FullAddress>
+          <ZipCode/>
+          <Region>Московская обл</Region>
+          <District>Истринский р-н</District>
+          <City/>
+          <Locality>п. Борзые</Locality>
+          <Street>Центральная ул.</Street>
+          <House>4</House>
+          <Housing/>
+          <Flat/>
+        </Address>
+        <Address>
+          <AddressType>2</AddressType>
+          <FullAddress>Московская обл, Истринский р-н, п. Борзые, Центральная ул., дом №4</FullAddress>
+          <ZipCode/>
+          <Region>Московская обл</Region>
+          <District>Истринский р-н</District>
+          <City/>
+          <Locality>п. Борзые</Locality>
+          <Street>Центральная ул.</Street>
+          <House>4</House>
+          <Housing/>
+          <Flat/>
+        </Address>
+      </Addresses>
+      <Contacts>
+        <Contact>
+          <ContactType>3</ContactType>
+          <ContactValue>+7 (916) 9202917</ContactValue>
+          <ContactMethodYN>Y</ContactMethodYN>
+        </Contact>
+        <Contact>
+          <ContactType>2</ContactType>
+          <ContactValue>+7 (916) 9202917</ContactValue>
+          <ContactMethodYN>Y</ContactMethodYN>
+        </Contact>
+      </Contacts>
+      <SpecialMessage>
+        <Message/>
+      </SpecialMessage>
+      <CorporateInfos/>
+    </Customer>
+    <Vehicle>
+      <DMSVehicleNo>ЦБ00018214</DMSVehicleNo>
+      <VIN>KMHLC41CBCU010844</VIN>
+      <StockNumber/>
+      <LicensePlateNo/>
+      <Make/>
+      <ModelCode>ЦБ00001167</ModelCode>
+      <ModelName>Hyundai I40</ModelName>
+      <ModelYear/>
+      <LastMileage/>
+      <Color/>
+      <VehicleType>1</VehicleType>
+      <EngineType/>
+      <FuelType/>
+      <Cylinders/>
+      <Trim/>
+      <FullModelName>Hyundai I40</FullModelName>
+      <InsuranceDate>0001-01-01T00:00:00</InsuranceDate>
+      <DateInService>0001-01-01T00:00:00</DateInService>
+      <DateDelivered>0001-01-01T00:00:00</DateDelivered>
+      <WarrantyStartDate>0001-01-01T00:00:00</WarrantyStartDate>
+      <WarrantyMonths/>
+      <WarrantyMiles/>
+      <LicenseNumber/>
+      <LastServiceDate>0001-01-01T00:00:00</LastServiceDate>
+      <ExtendedWarranty>0001-01-01T00:00:00</ExtendedWarranty>
+      <DeclinedJob/>
+      <PendingJob/>
+      <DisplayDescription>Hyundai I40 VIN KMHLC41CBCU010844</DisplayDescription>
+      <Campaigns>
+        <Campaign>
+          <CampaignID>ЦБ000304</CampaignID>
+          <CampaignDescription>30C036  ЗАМЕНА ЗАДНЕГО НИЖНЕГО РЫЧАГА</CampaignDescription>
+          <CampaignPerformed>N</CampaignPerformed>
+        </Campaign>
+      </Campaigns>
+      <ExtendedWarrantyExpireDate>0001-01-01T00:00:00</ExtendedWarrantyExpireDate>
+      <EngineNo/>
+    </Vehicle>
+  </CustomerVehicle>
+  <CustomerVehicle>
+    <Customer>
+      <CustomerInfoType>1</CustomerInfoType>
+      <DMSCustomerNo>00002</DMSCustomerNo>
+      <LastName>Основной</LastName>
+      <MiddleName>Unknown</MiddleName>
+      <FirstName>покупатель</FirstName>
+      <FullName>Основной покупатель</FullName>
+      <Salutation>г-н</Salutation>
+      <Gender>1</Gender>
+      <CardNo/>
+      <Email>нет</Email>
+      <Addresses>
+        <Address>
+          <AddressType>1</AddressType>
+          <FullAddress>Московская обл, Истринский р-н, п. Борзые, Центральная ул., дом №4</FullAddress>
+          <ZipCode/>
+          <Region>Московская обл</Region>
+          <District>Истринский р-н</District>
+          <City/>
+          <Locality>п. Борзые</Locality>
+          <Street>Центральная ул.</Street>
+          <House>4</House>
+          <Housing/>
+          <Flat/>
+        </Address>
+        <Address>
+          <AddressType>2</AddressType>
+          <FullAddress>Московская обл, Истринский р-н, п. Борзые, Центральная ул., дом №4</FullAddress>
+          <ZipCode/>
+          <Region>Московская обл</Region>
+          <District>Истринский р-н</District>
+          <City/>
+          <Locality>п. Борзые</Locality>
+          <Street>Центральная ул.</Street>
+          <House>4</House>
+          <Housing/>
+          <Flat/>
+        </Address>
+      </Addresses>
+      <Contacts>
+        <Contact>
+          <ContactType>3</ContactType>
+          <ContactValue>+7 (916) 9202917</ContactValue>
+          <ContactMethodYN>Y</ContactMethodYN>
+        </Contact>
+        <Contact>
+          <ContactType>2</ContactType>
+          <ContactValue>+7 (916) 9202917</ContactValue>
+          <ContactMethodYN>Y</ContactMethodYN>
+        </Contact>
+      </Contacts>
+      <SpecialMessage>
+        <Message/>
+      </SpecialMessage>
+      <CorporateInfos/>
+    </Customer>
+    <Vehicle>
+      <DMSVehicleNo>ЦБ00020212</DMSVehicleNo>
+      <VIN>Z94CU41DBBR073481</VIN>
+      <StockNumber/>
+      <LicensePlateNo>Е735СВ197</LicensePlateNo>
+      <Make/>
+      <ModelCode>ЦБ00001038</ModelCode>
+      <ModelName>Hyundai Solaris SD</ModelName>
+      <ModelYear/>
+      <LastMileage/>
+      <Color/>
+      <VehicleType>1</VehicleType>
+      <EngineType>1.6</EngineType>
+      <FuelType/>
+      <Cylinders/>
+      <Trim/>
+      <FullModelName>Hyundai Solaris SD</FullModelName>
+      <InsuranceDate>0001-01-01T00:00:00</InsuranceDate>
+      <DateInService>0001-01-01T00:00:00</DateInService>
+      <DateDelivered>0001-01-01T00:00:00</DateDelivered>
+      <WarrantyStartDate>0001-01-01T00:00:00</WarrantyStartDate>
+      <WarrantyMonths/>
+      <WarrantyMiles/>
+      <LicenseNumber/>
+      <LastServiceDate>2015-03-31T16:13:40</LastServiceDate>
+      <ExtendedWarranty>0001-01-01T00:00:00</ExtendedWarranty>
+      <DeclinedJob/>
+      <PendingJob/>
+      <DisplayDescription>Hyundai Solaris SD № е735св197 VIN Z94CU41DBBR073481</DisplayDescription>
+      <Campaigns>
+        <Campaign>
+          <CampaignID>ЦБ000268</CampaignID>
+          <CampaignDescription>20CR22 обработка воском бензобака от стука сзади</CampaignDescription>
+          <CampaignPerformed>Y</CampaignPerformed>
+        </Campaign>
+        <Campaign>
+          <CampaignID>ЦБ000309</CampaignID>
+          <CampaignDescription>40CR24 Замена крышки серв.обсл. и установка крышки вентиляции</CampaignDescription>
+          <CampaignPerformed>Y</CampaignPerformed>
+        </Campaign>
+      </Campaigns>
+      <ExtendedWarrantyExpireDate>0001-01-01T00:00:00</ExtendedWarrantyExpireDate>
+      <EngineNo/>
+    </Vehicle>
+  </CustomerVehicle>
+  <CustomerVehicle>
+    <Customer>
+      <CustomerInfoType>1</CustomerInfoType>
+      <DMSCustomerNo>00002</DMSCustomerNo>
+      <LastName>Основной</LastName>
+      <MiddleName>Unknown</MiddleName>
+      <FirstName>покупатель</FirstName>
+      <FullName>Основной покупатель</FullName>
+      <Salutation>г-н</Salutation>
+      <Gender>1</Gender>
+      <CardNo/>
+      <Email>нет</Email>
+      <Addresses>
+        <Address>
+          <AddressType>1</AddressType>
+          <FullAddress>Московская обл, Истринский р-н, п. Борзые, Центральная ул., дом №4</FullAddress>
+          <ZipCode/>
+          <Region>Московская обл</Region>
+          <District>Истринский р-н</District>
+          <City/>
+          <Locality>п. Борзые</Locality>
+          <Street>Центральная ул.</Street>
+          <House>4</House>
+          <Housing/>
+          <Flat/>
+        </Address>
+        <Address>
+          <AddressType>2</AddressType>
+          <FullAddress>Московская обл, Истринский р-н, п. Борзые, Центральная ул., дом №4</FullAddress>
+          <ZipCode/>
+          <Region>Московская обл</Region>
+          <District>Истринский р-н</District>
+          <City/>
+          <Locality>п. Борзые</Locality>
+          <Street>Центральная ул.</Street>
+          <House>4</House>
+          <Housing/>
+          <Flat/>
+        </Address>
+      </Addresses>
+      <Contacts>
+        <Contact>
+          <ContactType>3</ContactType>
+          <ContactValue>+7 (916) 9202917</ContactValue>
+          <ContactMethodYN>Y</ContactMethodYN>
+        </Contact>
+        <Contact>
+          <ContactType>2</ContactType>
+          <ContactValue>+7 (916) 9202917</ContactValue>
+          <ContactMethodYN>Y</ContactMethodYN>
+        </Contact>
+      </Contacts>
+      <SpecialMessage>
+        <Message/>
+      </SpecialMessage>
+      <CorporateInfos/>
+    </Customer>
+    <Vehicle>
+      <DMSVehicleNo>ЦБ00020840</DMSVehicleNo>
+      <VIN>Z94CT41DBBR052072</VIN>
+      <StockNumber/>
+      <LicensePlateNo>К650ОУ190</LicensePlateNo>
+      <Make/>
+      <ModelCode>ЦБ00001038</ModelCode>
+      <ModelName>Hyundai Solaris SD</ModelName>
+      <ModelYear/>
+      <LastMileage/>
+      <Color/>
+      <VehicleType>1</VehicleType>
+      <EngineType>1.6</EngineType>
+      <FuelType/>
+      <Cylinders/>
+      <Trim/>
+      <FullModelName>Hyundai Solaris SD</FullModelName>
+      <InsuranceDate>0001-01-01T00:00:00</InsuranceDate>
+      <DateInService>0001-01-01T00:00:00</DateInService>
+      <DateDelivered>0001-01-01T00:00:00</DateDelivered>
+      <WarrantyStartDate>0001-01-01T00:00:00</WarrantyStartDate>
+      <WarrantyMonths/>
+      <WarrantyMiles/>
+      <LicenseNumber/>
+      <LastServiceDate>2015-05-06T13:50:52</LastServiceDate>
+      <ExtendedWarranty>0001-01-01T00:00:00</ExtendedWarranty>
+      <DeclinedJob/>
+      <PendingJob/>
+      <DisplayDescription>Hyundai Solaris SD № к650оу190 VIN Z94CT41DBBR052072</DisplayDescription>
+      <Campaigns>
+        <Campaign>
+          <CampaignID>ЦБ000309</CampaignID>
+          <CampaignDescription>40CR24 Замена крышки серв.обсл. и установка крышки вентиляции</CampaignDescription>
+          <CampaignPerformed>Y</CampaignPerformed>
+        </Campaign>
+        <Campaign>
+          <CampaignID>ЦБ000268</CampaignID>
+          <CampaignDescription>20CR22 обработка воском бензобака от стука сзади</CampaignDescription>
+          <CampaignPerformed>Y</CampaignPerformed>
+        </Campaign>
+      </Campaigns>
+      <ExtendedWarrantyExpireDate>0001-01-01T00:00:00</ExtendedWarrantyExpireDate>
+      <EngineNo/>
+    </Vehicle>
+  </CustomerVehicle>
+  <CustomerVehicle>
+    <Customer>
+      <CustomerInfoType>1</CustomerInfoType>
+      <DMSCustomerNo>00002</DMSCustomerNo>
+      <LastName>Основной</LastName>
+      <MiddleName>Unknown</MiddleName>
+      <FirstName>покупатель</FirstName>
+      <FullName>Основной покупатель</FullName>
+      <Salutation>г-н</Salutation>
+      <Gender>1</Gender>
+      <CardNo/>
+      <Email>нет</Email>
+      <Addresses>
+        <Address>
+          <AddressType>1</AddressType>
+          <FullAddress>Московская обл, Истринский р-н, п. Борзые, Центральная ул., дом №4</FullAddress>
+          <ZipCode/>
+          <Region>Московская обл</Region>
+          <District>Истринский р-н</District>
+          <City/>
+          <Locality>п. Борзые</Locality>
+          <Street>Центральная ул.</Street>
+          <House>4</House>
+          <Housing/>
+          <Flat/>
+        </Address>
+        <Address>
+          <AddressType>2</AddressType>
+          <FullAddress>Московская обл, Истринский р-н, п. Борзые, Центральная ул., дом №4</FullAddress>
+          <ZipCode/>
+          <Region>Московская обл</Region>
+          <District>Истринский р-н</District>
+          <City/>
+          <Locality>п. Борзые</Locality>
+          <Street>Центральная ул.</Street>
+          <House>4</House>
+          <Housing/>
+          <Flat/>
+        </Address>
+      </Addresses>
+      <Contacts>
+        <Contact>
+          <ContactType>3</ContactType>
+          <ContactValue>+7 (916) 9202917</ContactValue>
+          <ContactMethodYN>Y</ContactMethodYN>
+        </Contact>
+        <Contact>
+          <ContactType>2</ContactType>
+          <ContactValue>+7 (916) 9202917</ContactValue>
+          <ContactMethodYN>Y</ContactMethodYN>
+        </Contact>
+      </Contacts>
+      <SpecialMessage>
+        <Message/>
+      </SpecialMessage>
+      <CorporateInfos/>
+    </Customer>
+    <Vehicle>
+      <DMSVehicleNo>ЦБ00020967</DMSVehicleNo>
+      <VIN>XWEGH41HBE0000079</VIN>
+      <StockNumber/>
+      <LicensePlateNo>К286ВЕ777</LicensePlateNo>
+      <Make/>
+      <ModelCode>ЦБ00000054</ModelCode>
+      <ModelName>Hyundai Equus</ModelName>
+      <ModelYear/>
+      <LastMileage/>
+      <Color/>
+      <VehicleType>1</VehicleType>
+      <EngineType/>
+      <FuelType/>
+      <Cylinders/>
+      <Trim/>
+      <FullModelName>Hyundai Equus</FullModelName>
+      <InsuranceDate>0001-01-01T00:00:00</InsuranceDate>
+      <DateInService>0001-01-01T00:00:00</DateInService>
+      <DateDelivered>0001-01-01T00:00:00</DateDelivered>
+      <WarrantyStartDate>0001-01-01T00:00:00</WarrantyStartDate>
+      <WarrantyMonths/>
+      <WarrantyMiles/>
+      <LicenseNumber/>
+      <LastServiceDate>2015-05-18T13:40:15</LastServiceDate>
+      <ExtendedWarranty>0001-01-01T00:00:00</ExtendedWarranty>
+      <DeclinedJob/>
+      <PendingJob/>
+      <DisplayDescription>Hyundai Equus № к286ве777 VIN XWEGH41HBE0000079</DisplayDescription>
+      <Campaigns/>
+      <ExtendedWarrantyExpireDate>0001-01-01T00:00:00</ExtendedWarrantyExpireDate>
+      <EngineNo/>
+    </Vehicle>
+  </CustomerVehicle>
+  <CustomerVehicle>
+    <Customer>
+      <CustomerInfoType>1</CustomerInfoType>
+      <DMSCustomerNo>00002</DMSCustomerNo>
+      <LastName>Основной</LastName>
+      <MiddleName>Unknown</MiddleName>
+      <FirstName>покупатель</FirstName>
+      <FullName>Основной покупатель</FullName>
+      <Salutation>г-н</Salutation>
+      <Gender>1</Gender>
+      <CardNo/>
+      <Email>нет</Email>
+      <Addresses>
+        <Address>
+          <AddressType>1</AddressType>
+          <FullAddress>Московская обл, Истринский р-н, п. Борзые, Центральная ул., дом №4</FullAddress>
+          <ZipCode/>
+          <Region>Московская обл</Region>
+          <District>Истринский р-н</District>
+          <City/>
+          <Locality>п. Борзые</Locality>
+          <Street>Центральная ул.</Street>
+          <House>4</House>
+          <Housing/>
+          <Flat/>
+        </Address>
+        <Address>
+          <AddressType>2</AddressType>
+          <FullAddress>Московская обл, Истринский р-н, п. Борзые, Центральная ул., дом №4</FullAddress>
+          <ZipCode/>
+          <Region>Московская обл</Region>
+          <District>Истринский р-н</District>
+          <City/>
+          <Locality>п. Борзые</Locality>
+          <Street>Центральная ул.</Street>
+          <House>4</House>
+          <Housing/>
+          <Flat/>
+        </Address>
+      </Addresses>
+      <Contacts>
+        <Contact>
+          <ContactType>3</ContactType>
+          <ContactValue>+7 (916) 9202917</ContactValue>
+          <ContactMethodYN>Y</ContactMethodYN>
+        </Contact>
+        <Contact>
+          <ContactType>2</ContactType>
+          <ContactValue>+7 (916) 9202917</ContactValue>
+          <ContactMethodYN>Y</ContactMethodYN>
+        </Contact>
+      </Contacts>
+      <SpecialMessage>
+        <Message/>
+      </SpecialMessage>
+      <CorporateInfos/>
+    </Customer>
+    <Vehicle>
+      <DMSVehicleNo>ЦБ00020997</DMSVehicleNo>
+      <VIN>KMHSH81BDBU773016</VIN>
+      <StockNumber/>
+      <LicensePlateNo>Х176НХ197</LicensePlateNo>
+      <Make/>
+      <ModelCode>ЦБ00000008</ModelCode>
+      <ModelName>Hyundai Santa Fe CM</ModelName>
+      <ModelYear/>
+      <LastMileage>73941</LastMileage>
+      <Color/>
+      <VehicleType>1</VehicleType>
+      <EngineType>2,4</EngineType>
+      <FuelType/>
+      <Cylinders/>
+      <Trim/>
+      <FullModelName>Hyundai Santa Fe CM</FullModelName>
+      <InsuranceDate>0001-01-01T00:00:00</InsuranceDate>
+      <DateInService>0001-01-01T00:00:00</DateInService>
+      <DateDelivered>0001-01-01T00:00:00</DateDelivered>
+      <WarrantyStartDate>0001-01-01T00:00:00</WarrantyStartDate>
+      <WarrantyMonths/>
+      <WarrantyMiles/>
+      <LicenseNumber/>
+      <LastServiceDate>2015-05-26T09:58:11</LastServiceDate>
+      <ExtendedWarranty>0001-01-01T00:00:00</ExtendedWarranty>
+      <DeclinedJob/>
+      <PendingJob/>
+      <DisplayDescription>Hyundai Santa Fe № х176нх197 VIN KMHSH81BDBU773016</DisplayDescription>
+      <Campaigns>
+        <Campaign>
+          <CampaignID>ЦБ000270</CampaignID>
+          <CampaignDescription>31C017 Замена датчика стоп-сигнала</CampaignDescription>
+          <CampaignPerformed>Y</CampaignPerformed>
+        </Campaign>
+        <Campaign>
+          <CampaignID>ЦБ000271</CampaignID>
+          <CampaignDescription>31C017 ЗАМЕНА ДАТЧИКА СТОП-СИГНАЛА SANTAFE ix55</CampaignDescription>
+          <CampaignPerformed>Y</CampaignPerformed>
+        </Campaign>
+        <Campaign>
+          <CampaignID>ЦБ000281</CampaignID>
+          <CampaignDescription>10С116 ЗАМЕНА КЛЕММ АКБ</CampaignDescription>
+          <CampaignPerformed>Y</CampaignPerformed>
+        </Campaign>
+        <Campaign>
+          <CampaignID>ЦБ000253</CampaignID>
+          <CampaignDescription>10C116 ЗАМЕНА КЛЕММ КАБЕЛЯ АКБ</CampaignDescription>
+          <CampaignPerformed>Y</CampaignPerformed>
+        </Campaign>
+      </Campaigns>
+      <ExtendedWarrantyExpireDate>0001-01-01T00:00:00</ExtendedWarrantyExpireDate>
+      <EngineNo/>
+    </Vehicle>
+  </CustomerVehicle>
+  <CustomerVehicle>
+    <Customer>
+      <CustomerInfoType>1</CustomerInfoType>
+      <DMSCustomerNo>ЦБ003380</DMSCustomerNo>
+      <LastName>Шилин</LastName>
+      <MiddleName>Семенович</MiddleName>
+      <FirstName>Юрий</FirstName>
+      <FullName>Шилин Юрий Семенович</FullName>
+      <Salutation>г-н</Salutation>
+      <Gender>1</Gender>
+      <CardNo/>
+      <Email/>
+      <Addresses>
+        <Address>
+          <AddressType>1</AddressType>
+          <FullAddress>143405, Московская обл, Красногорский р-н, Красногорск г, Промышленная ул, дом №42, кв.87</FullAddress>
+          <ZipCode>143405</ZipCode>
+          <Region>Московская обл</Region>
+          <District>Красногорский р-н</District>
+          <City>Красногорск г</City>
+          <Locality/>
+          <Street>Промышленная ул</Street>
+          <House>42</House>
+          <Housing/>
+          <Flat>87</Flat>
+        </Address>
+        <Address>
+          <AddressType>2</AddressType>
+          <FullAddress>143405, Московская обл, Красногорский р-н, Красногорск г, Промышленная ул, дом №42, кв.87</FullAddress>
+          <ZipCode>143405</ZipCode>
+          <Region>Московская обл</Region>
+          <District>Красногорский р-н</District>
+          <City>Красногорск г</City>
+          <Locality/>
+          <Street>Промышленная ул</Street>
+          <House>42</House>
+          <Housing/>
+          <Flat>87</Flat>
+        </Address>
+      </Addresses>
+      <Contacts>
+        <Contact>
+          <ContactType>2</ContactType>
+          <ContactValue>+7 (916) 6408064</ContactValue>
+          <ContactMethodYN>Y</ContactMethodYN>
+        </Contact>
+      </Contacts>
+      <SpecialMessage>
+        <Message/>
+      </SpecialMessage>
+      <CorporateInfos/>
+    </Customer>
+    <Vehicle>
+      <DMSVehicleNo>ЦБ00002868</DMSVehicleNo>
+      <VIN>Z94CU41DABR001453</VIN>
+      <StockNumber/>
+      <LicensePlateNo>Н882МХ190</LicensePlateNo>
+      <Make/>
+      <ModelCode>ЦБ00001038</ModelCode>
+      <ModelName>Hyundai Solaris SD</ModelName>
+      <ModelYear/>
+      <LastMileage>77798</LastMileage>
+      <Color>Черный</Color>
+      <VehicleType>1</VehicleType>
+      <EngineType>1.6</EngineType>
+      <FuelType/>
+      <Cylinders/>
+      <Trim/>
+      <FullModelName>Hyundai Solaris SD</FullModelName>
+      <InsuranceDate>0001-01-01T00:00:00</InsuranceDate>
+      <DateInService>0001-01-01T00:00:00</DateInService>
+      <DateDelivered>0001-01-01T00:00:00</DateDelivered>
+      <WarrantyStartDate>2011-03-04T00:00:00</WarrantyStartDate>
+      <WarrantyMonths/>
+      <WarrantyMiles/>
+      <LicenseNumber/>
+      <LastServiceDate>2014-12-30T18:00:00</LastServiceDate>
+      <ExtendedWarranty>0001-01-01T00:00:00</ExtendedWarranty>
+      <DeclinedJob/>
+      <PendingJob/>
+      <DisplayDescription>Hyundai Solaris SD MZH (Phantom Black) № н882мх190 VIN Z94CU41DABR001453</DisplayDescription>
+      <Campaigns>
+        <Campaign>
+          <CampaignID>ЦБ000289</CampaignID>
+          <CampaignDescription>10CR12 ОБРАЗОВАНИЕ ОБЛЕДЕНЕНИЯ ПРИ РАБОТЕ КОНДИЦИОНЕРА (УСТАНОВКА ДОП.ПРОВОДА)</CampaignDescription>
+          <CampaignPerformed>N</CampaignPerformed>
+        </Campaign>
+        <Campaign>
+          <CampaignID>ЦБ000110</CampaignID>
+          <CampaignDescription>10CR07 ПЛАСТИКОВАЯ ШАЙБА ВЕДУЩЕГО ВАЛА (ОБЕ СТОРОНЫ) СНЯТИЕ</CampaignDescription>
+          <CampaignPerformed>N</CampaignPerformed>
+        </Campaign>
+        <Campaign>
+          <CampaignID>ЦБ000119</CampaignID>
+          <CampaignDescription>10CR05 При жалобах solaris на подрулеой переключатель</CampaignDescription>
+          <CampaignPerformed>N</CampaignPerformed>
+        </Campaign>
+        <Campaign>
+          <CampaignID>ЦБ000114</CampaignID>
+          <CampaignDescription>10CR08 ПРОВЕРКА ТЕЧИ МАСЛА РУЛЕВОЙ РЕЙКИ</CampaignDescription>
+          <CampaignPerformed>N</CampaignPerformed>
+        </Campaign>
+        <Campaign>
+          <CampaignID>ЦБ000251</CampaignID>
+          <CampaignDescription>10CR16 При жалобе замена кнопок слева на рулевом колесе</CampaignDescription>
+          <CampaignPerformed>N</CampaignPerformed>
+        </Campaign>
+        <Campaign>
+          <CampaignID>ЦБ000252</CampaignID>
+          <CampaignDescription>10CR17  При жалобе замена кнопок справа на рулевом колесе</CampaignDescription>
+          <CampaignPerformed>N</CampaignPerformed>
+        </Campaign>
+        <Campaign>
+          <CampaignID>ЦБ000107</CampaignID>
+          <CampaignDescription>10CR04 ЗАМЕНА КНОПКИ ОТКРЫВАНИЯ БАГАЖНИКА</CampaignDescription>
+          <CampaignPerformed>Y</CampaignPerformed>
+        </Campaign>
+        <Campaign>
+          <CampaignID>ЦБ000249</CampaignID>
+          <CampaignDescription>10CR12 Образование обледенения при работе кондиционера SOLARIS (RBr)</CampaignDescription>
+          <CampaignPerformed>Y</CampaignPerformed>
+        </Campaign>
+        <Campaign>
+          <CampaignID>ЦБ000268</CampaignID>
+          <CampaignDescription>20CR22 обработка воском бензобака от стука сзади</CampaignDescription>
+          <CampaignPerformed>Y</CampaignPerformed>
+        </Campaign>
+        <Campaign>
+          <CampaignID>ЦБ000309</CampaignID>
+          <CampaignDescription>40CR24 Замена крышки серв.обсл. и установка крышки вентиляции</CampaignDescription>
+          <CampaignPerformed>Y</CampaignPerformed>
+        </Campaign>
+      </Campaigns>
+      <ExtendedWarrantyExpireDate>0001-01-01T00:00:00</ExtendedWarrantyExpireDate>
+      <EngineNo>G4FC AW190539</EngineNo>
+    </Vehicle>
+  </CustomerVehicle>
+</CustomerVehicles>

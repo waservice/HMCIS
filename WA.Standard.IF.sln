@@ -1,0 +1,169 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WA.Standard.IF.WebService", "WA.Standard.IF.WebService\WA.Standard.IF.WebService.csproj", "{6F873F89-15DF-4D80-AB17-EF72C4EEF1C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WA.Standard.IF.Data", "WA.Standard.IF.Data\WA.Standard.IF.Data.csproj", "{2635AE3E-B79A-4EBD-8B3D-3284DDEF7A8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WA.Standard.IF.Biz", "WA.Standard.IF.Biz\WA.Standard.IF.Biz.csproj", "{6232757D-624E-4104-A40F-121ACA26A7D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "20.Biz", "20.Biz", "{F4CFEDF3-D18D-40C6-9E34-E8E980CDA84D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "40.Data", "40.Data", "{5571EA87-5FCD-4B73-AF05-ECF54052C4FD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "80.WebService", "80.WebService", "{7288FD08-AE5D-4CB4-A8F2-E20730D0631B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10.Logger", "10.Logger", "{F37BE1BF-2D28-4EDB-9AEA-CF1525408B3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WA.Standard.IF.Logger", "WA.Standard.IF.Logger\WA.Standard.IF.Logger.csproj", "{1E7DDCFB-D1EA-42E7-B139-660F72F8DDE3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "30.Dac", "30.Dac", "{E72C1260-8ED5-44A6-8706-7F7C561E7038}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WA.Standard.IF.Dac", "WA.Standard.IF.Dac\WA.Standard.IF.Dac.csproj", "{2C73209D-D092-4CE3-ADD4-438BFBB8D7ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00.Assembly", "00.Assembly", "{1FC05ACA-1B3F-4819-94FF-A299FFBCD17D}"
+	ProjectSection(SolutionItems) = preProject
+		WA.Standard.IF.Assembly\log4net.dll = WA.Standard.IF.Assembly\log4net.dll
+		WA.Standard.IF.Assembly\Microsoft.Practices.EnterpriseLibrary.Common.dll = WA.Standard.IF.Assembly\Microsoft.Practices.EnterpriseLibrary.Common.dll
+		WA.Standard.IF.Assembly\Microsoft.Practices.EnterpriseLibrary.Data.dll = WA.Standard.IF.Assembly\Microsoft.Practices.EnterpriseLibrary.Data.dll
+		WA.Standard.IF.Assembly\Microsoft.Practices.ObjectBuilder.dll = WA.Standard.IF.Assembly\Microsoft.Practices.ObjectBuilder.dll
+		WA.Standard.IF.Assembly\STIS.Framework.V4.Cryptography.dll = WA.Standard.IF.Assembly\STIS.Framework.V4.Cryptography.dll
+		WA.Standard.IF.Assembly\STIS.Framework.V4.dll = WA.Standard.IF.Assembly\STIS.Framework.V4.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "60.Proxy", "60.Proxy", "{0B4EC436-75DA-48D4-B02A-061524018EEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WA.Standard.IF.Proxy", "WA.Standard.IF.Proxy\WA.Standard.IF.Proxy.csproj", "{5C0853B7-0B55-4921-918B-578AF0B454CB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "70.DMS", "70.DMS", "{62DE2FE5-8326-429A-A134-4CA74BEF467C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_1C.v8241", "DMS.Standard.IF.Proxy\_1C.v8241\_1C.v8241.csproj", "{753CE6F3-0EB5-4DB9-9999-5EB73427B640}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "90.WA.Standard.IF.WebService.Dummy", "90.WA.Standard.IF.WebService.Dummy", "{0E289120-6D20-4A14-920F-465DA85A8184}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WA.v2", "DMS.Standard.IF.Proxy\WA.v2\WA.v2\WA.v2.csproj", "{C7826EB8-E743-461D-9730-8DEAB3C945FB}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WA.Standard.IF.WebService.Dummy", "WA.Standard.IF.WebService.Dummy", "{5FBBBA65-AF41-44C0-B5F8-B5C387CED186}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = ""$/v2/Program/WA.Standard.IF", JTCAAAAA"
+		SccAuxPath = ""
+		SccLocalPath = ".."
+		SccProvider = "MSSCCI:Microsoft Visual SourceSafe"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/WA.Standard.IF.WebService.Dummy"
+		Debug.AspNetCompiler.PhysicalPath = "WA.Standard.IF.WebService.Dummy\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\WA.Standard.IF.WebService.Dummy\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/WA.Standard.IF.WebService.Dummy"
+		Release.AspNetCompiler.PhysicalPath = "WA.Standard.IF.WebService.Dummy\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\WA.Standard.IF.WebService.Dummy\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "55434"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 10
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = WA.Standard.IF.WebService\\WA.Standard.IF.WebService.csproj
+		SccProjectTopLevelParentUniqueName1 = WA.Standard.IF.sln
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = WA.Standard.IF.WebService\\
+		SccProjectUniqueName2 = WA.Standard.IF.Data\\WA.Standard.IF.Data.csproj
+		SccProjectTopLevelParentUniqueName2 = WA.Standard.IF.sln
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = WA.Standard.IF.Data\\
+		SccProjectUniqueName3 = WA.Standard.IF.Biz\\WA.Standard.IF.Biz.csproj
+		SccProjectTopLevelParentUniqueName3 = WA.Standard.IF.sln
+		SccLocalPath3 = .
+		SccProjectFilePathRelativizedFromConnection3 = WA.Standard.IF.Biz\\
+		SccProjectUniqueName4 = WA.Standard.IF.Logger\\WA.Standard.IF.Logger.csproj
+		SccProjectTopLevelParentUniqueName4 = WA.Standard.IF.sln
+		SccLocalPath4 = .
+		SccProjectFilePathRelativizedFromConnection4 = WA.Standard.IF.Logger\\
+		SccProjectUniqueName5 = WA.Standard.IF.Dac\\WA.Standard.IF.Dac.csproj
+		SccProjectTopLevelParentUniqueName5 = WA.Standard.IF.sln
+		SccLocalPath5 = .
+		SccProjectFilePathRelativizedFromConnection5 = WA.Standard.IF.Dac\\
+		SccProjectUniqueName6 = WA.Standard.IF.Proxy\\WA.Standard.IF.Proxy.csproj
+		SccProjectTopLevelParentUniqueName6 = WA.Standard.IF.sln
+		SccLocalPath6 = .
+		SccProjectFilePathRelativizedFromConnection6 = WA.Standard.IF.Proxy\\
+		SccProjectUniqueName7 = DMS.Standard.IF.Proxy\\_1C.v8241\\_1C.v8241.csproj
+		SccProjectTopLevelParentUniqueName7 = WA.Standard.IF.sln
+		SccLocalPath7 = .
+		SccProjectFilePathRelativizedFromConnection7 = DMS.Standard.IF.Proxy\\_1C.v8241\\
+		SccProjectUniqueName8 = DMS.Standard.IF.Proxy\\WA.v2\\WA.v2\\WA.v2.csproj
+		SccProjectTopLevelParentUniqueName8 = WA.Standard.IF.sln
+		SccLocalPath8 = .
+		SccProjectFilePathRelativizedFromConnection8 = DMS.Standard.IF.Proxy\\WA.v2\\WA.v2\\
+		SccWebProject9 = true
+		SccProjectUniqueName9 = WA.Standard.IF.WebService.Dummy
+		SccProjectTopLevelParentUniqueName9 = WA.Standard.IF.sln
+		SccLocalPath9 = .
+		SccProjectFilePathRelativizedFromConnection9 = WA.Standard.IF.WebService.Dummy\\
+		SccProjectEnlistmentChoice9 = 2
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F873F89-15DF-4D80-AB17-EF72C4EEF1C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F873F89-15DF-4D80-AB17-EF72C4EEF1C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F873F89-15DF-4D80-AB17-EF72C4EEF1C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F873F89-15DF-4D80-AB17-EF72C4EEF1C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2635AE3E-B79A-4EBD-8B3D-3284DDEF7A8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2635AE3E-B79A-4EBD-8B3D-3284DDEF7A8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2635AE3E-B79A-4EBD-8B3D-3284DDEF7A8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2635AE3E-B79A-4EBD-8B3D-3284DDEF7A8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6232757D-624E-4104-A40F-121ACA26A7D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6232757D-624E-4104-A40F-121ACA26A7D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6232757D-624E-4104-A40F-121ACA26A7D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6232757D-624E-4104-A40F-121ACA26A7D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E7DDCFB-D1EA-42E7-B139-660F72F8DDE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E7DDCFB-D1EA-42E7-B139-660F72F8DDE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E7DDCFB-D1EA-42E7-B139-660F72F8DDE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E7DDCFB-D1EA-42E7-B139-660F72F8DDE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C73209D-D092-4CE3-ADD4-438BFBB8D7ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C73209D-D092-4CE3-ADD4-438BFBB8D7ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C73209D-D092-4CE3-ADD4-438BFBB8D7ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C73209D-D092-4CE3-ADD4-438BFBB8D7ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C0853B7-0B55-4921-918B-578AF0B454CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C0853B7-0B55-4921-918B-578AF0B454CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C0853B7-0B55-4921-918B-578AF0B454CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C0853B7-0B55-4921-918B-578AF0B454CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{753CE6F3-0EB5-4DB9-9999-5EB73427B640}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{753CE6F3-0EB5-4DB9-9999-5EB73427B640}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{753CE6F3-0EB5-4DB9-9999-5EB73427B640}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{753CE6F3-0EB5-4DB9-9999-5EB73427B640}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7826EB8-E743-461D-9730-8DEAB3C945FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7826EB8-E743-461D-9730-8DEAB3C945FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7826EB8-E743-461D-9730-8DEAB3C945FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7826EB8-E743-461D-9730-8DEAB3C945FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FBBBA65-AF41-44C0-B5F8-B5C387CED186}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FBBBA65-AF41-44C0-B5F8-B5C387CED186}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FBBBA65-AF41-44C0-B5F8-B5C387CED186}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FBBBA65-AF41-44C0-B5F8-B5C387CED186}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6F873F89-15DF-4D80-AB17-EF72C4EEF1C1} = {7288FD08-AE5D-4CB4-A8F2-E20730D0631B}
+		{2635AE3E-B79A-4EBD-8B3D-3284DDEF7A8C} = {5571EA87-5FCD-4B73-AF05-ECF54052C4FD}
+		{6232757D-624E-4104-A40F-121ACA26A7D2} = {F4CFEDF3-D18D-40C6-9E34-E8E980CDA84D}
+		{1E7DDCFB-D1EA-42E7-B139-660F72F8DDE3} = {F37BE1BF-2D28-4EDB-9AEA-CF1525408B3B}
+		{2C73209D-D092-4CE3-ADD4-438BFBB8D7ED} = {E72C1260-8ED5-44A6-8706-7F7C561E7038}
+		{5C0853B7-0B55-4921-918B-578AF0B454CB} = {0B4EC436-75DA-48D4-B02A-061524018EEC}
+		{753CE6F3-0EB5-4DB9-9999-5EB73427B640} = {62DE2FE5-8326-429A-A134-4CA74BEF467C}
+		{C7826EB8-E743-461D-9730-8DEAB3C945FB} = {62DE2FE5-8326-429A-A134-4CA74BEF467C}
+		{5FBBBA65-AF41-44C0-B5F8-B5C387CED186} = {0E289120-6D20-4A14-920F-465DA85A8184}
+	EndGlobalSection
+EndGlobal
