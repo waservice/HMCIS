@@ -1,0 +1,60 @@
+﻿<Employees>
+  <Employee>
+    <DMSEmployeeNo>0000000056</DMSEmployeeNo>
+    <LastName>Печникова</LastName>
+    <MiddleName>Владимировна</MiddleName>
+    <FirstName>Евгения</FirstName>
+    <FullName>Печникова Евгения Владимировна</FullName>
+    <Salution/>
+    <Gender>M</Gender>
+    <Language>ru</Language>
+    <SkillsetString/>
+    <Title/>
+    <MobileNumber/>
+    <PhoneNumber/>
+    <Email/>
+    <LoginID/>
+    <LoginPassword/>
+    <EmployeeStatus>-1</EmployeeStatus>
+    <Group/>
+    <ManagementFields>
+      <CreateDateTimeUTC>0001-01-01T00:00:00</CreateDateTimeUTC>
+      <LastModifiedDateTimeUTC>0001-01-01T00:00:00</LastModifiedDateTimeUTC>
+    </ManagementFields>
+    <Roles>
+      <Role>
+        <RoleName/>
+        <RoleUserID/>
+      </Role>
+    </Roles>
+  </Employee>
+  <Employee>
+    <DMSEmployeeNo>0000000056</DMSEmployeeNo>
+    <LastName>Молчанов</LastName>
+    <MiddleName>Викторович</MiddleName>
+    <FirstName>Дмитрий</FirstName>
+    <FullName>Молчанов Дмитрий Викторович</FullName>
+    <Salution/>
+    <Gender>M</Gender>
+    <Language>ru</Language>
+    <SkillsetString/>
+    <Title/>
+    <MobileNumber>+7 (967) 1704977</MobileNumber>
+    <PhoneNumber/>
+    <Email/>
+    <LoginID/>
+    <LoginPassword/>
+    <EmployeeStatus>0</EmployeeStatus>
+    <Group/>
+    <ManagementFields>
+      <CreateDateTimeUTC>0001-01-01T00:00:00</CreateDateTimeUTC>
+      <LastModifiedDateTimeUTC>0001-01-01T00:00:00</LastModifiedDateTimeUTC>
+    </ManagementFields>
+    <Roles>
+      <Role>
+        <RoleName>SA</RoleName>
+        <RoleUserID/>
+      </Role>
+    </Roles>
+  </Employee>
+</Employees>

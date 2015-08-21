@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://wa.dms.webservice/" xmlns:s0="http://wa.dms.webservice/PrintRequest" xmlns:s1="http://wa.dms.webservice/PrintResponse" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://wa.dms.webservice/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://wa.dms.webservice/PrintRequest">
+      <s:element name="PrintRequest" nillable="true" type="s0:PrintRequest" />
+      <s:complexType name="PrintRequest">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionHeader" type="s0:TransactionHeader" />
+          <s:element minOccurs="0" maxOccurs="1" name="Print" type="s0:Print" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TransactionHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CountryID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DistributorID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GroupID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DealerID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DMSCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DMSVersion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DMSServerUrl" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DocumentVersion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TransactionDateTimeUTC" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="TransactionDateTimeLocal" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RequestType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RequestPollingToken" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VenderTrackingCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IneterfaceID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PollingToken" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Print">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="DMSRONo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PrintType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PrintAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CopyNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VHC" type="s0:VHC" />
+          <s:element minOccurs="0" maxOccurs="1" name="FinalInspection" type="s0:FinalInspection" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="VHC">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="InternalInspection" type="s0:InternalInspection" />
+          <s:element minOccurs="0" maxOccurs="1" name="LevelOfFuelInTank" type="s0:LevelOfFuelInTank" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExternalInspection" type="s0:ExternalInspection" />
+          <s:element minOccurs="0" maxOccurs="1" name="UnderhoodInspection" type="s0:UnderhoodInspection" />
+          <s:element minOccurs="0" maxOccurs="1" name="VehicleIsPartlyLifted" type="s0:VehicleIsPartlyLifted" />
+          <s:element minOccurs="0" maxOccurs="1" name="VehicleIsFullyLifted" type="s0:VehicleIsFullyLifted" />
+          <s:element minOccurs="0" maxOccurs="1" name="InspectionOfBodyAndWindows" type="s0:InspectionOfBodyAndWindows" />
+          <s:element minOccurs="0" maxOccurs="1" name="Complectation" type="s0:Complectation" />
+          <s:element minOccurs="0" maxOccurs="1" name="AdditionalEquipment" type="s0:AdditionalEquipment" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="InternalInspection">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ParkingBrake" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SafetyBelts" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Horn" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ConditionSystem" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="WipersWashers" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="LevelOfFuelInTank">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Value" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ExternalInspection">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ExternalLights" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="UnderhoodInspection">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="AirFilter" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OilLevelInEngine" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DriveBelts" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PipelinesLeakage" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Battery" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="VehicleIsPartlyLifted">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SteeringSystem" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FrontWheelBearings" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RearWheelBearings" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ShockAbsorbers" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FrontBrakeDiscs" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RearBrakeDiscs" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FrontBrakePads" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RearBrakePads" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TyresWheelDiscs" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Radiators" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="VehicleIsFullyLifted">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="DriveShafts" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FrontSuspension" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RearSuspension" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExhaustSystem" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LeakageOfTechnicalLiquids" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="InspectionOfBodyAndWindows">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Value" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Complectation">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="AdditionalWheel" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StandardToolkit" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Jack" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Roadkit" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FirstAidkit" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Ashtray" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CigaretteLighter" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="AdditionalEquipment">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SecuritySystemWithEngineImmobilizer" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SecretNutsOnWheels" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="FinalInspection">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="PreparingForFinalInspection" type="s0:PreparingForFinalInspection" />
+          <s:element minOccurs="0" maxOccurs="1" name="InspectionUnderTheVehicle" type="s0:InspectionUnderTheVehicle" />
+          <s:element minOccurs="0" maxOccurs="1" name="CheckInsideOutside" type="s0:CheckInsideOutside" />
+          <s:element minOccurs="0" maxOccurs="1" name="UnderHoodInspection" type="s0:UnderHoodInspection" />
+          <s:element minOccurs="0" maxOccurs="1" name="RoadTest" type="s0:RoadTest" />
+          <s:element minOccurs="0" maxOccurs="1" name="StandTest" type="s0:StandTest" />
+          <s:element minOccurs="0" maxOccurs="1" name="Summary" type="s0:Summary" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PreparingForFinalInspection">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="LookThrowTheWorkingDocumentation" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LookThrowTheHistoryOfService" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="InspectionUnderTheVehicle">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="AbsenseOfLeakage" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BrakeAndFuelPipesAndHoses" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CrankcaseProtection" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TighteningTorqueOfDrainPlugsAndBrakeCalipers" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CheckInsideOutside">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="DamagesOnBodyAndPaint" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExteriorLighting" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="WiperAndWasherNozzles" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HornHandbrakeAndSeatBelts" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SettingsOfClockAndMediaSystem" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AbsenceOfCautionIndicatorsOnTheDashboard" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DoorsLocksAndWindowLifts" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TighteningTorqueOfWheelNuts" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AirPressureInTheTiresAndSpareWheel" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="UnderHoodInspection">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CleanlinessOfEngine" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AbsenceOfLeakage" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TighteningTorqueOfOilFillerCapsAndRadiator" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CleanlinessAndTighteningOfBatteryTerminals" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LevelsOfTechnicalLiquids" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExistenceOfSpecialTag" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CheckingOfCorrectnessOfHeadlights" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RoadTest">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CorrectnessOfEngineWorks" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CorrectnessWorkingOfClutchAndTransmission" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TheCorrectPositionOfTheSteeringWheel" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LackOfNoiseVibrationAndDynamicImpact" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="StandTest">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Brakes" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Shocks" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CorrectnessWayOfCarMoving" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Summary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CompletedWorkConsistentWithTheStated" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReplacedPartsMatchesWithWorkDoneAndPackedProperly" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TheVehicleIsSuitableForUse" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FillInFinalInspectionListAndSign" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CleanCarInsideAndOut" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ToSignRepairOrderAndGiveItSA" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://wa.dms.webservice/PrintResponse">
+      <s:element name="PrintResponse" nillable="true" type="s1:PrintResponse" />
+      <s:complexType name="PrintResponse">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionHeader" type="s1:TransactionHeader" />
+          <s:element minOccurs="0" maxOccurs="1" name="ResultMessage" type="s1:ResultMessage" />
+          <s:element minOccurs="0" maxOccurs="1" name="Errors" type="s1:ArrayOfError" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TransactionHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CountryID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DistributorID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GroupID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DealerID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DMSCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DMSVersion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DMSServerUrl" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DocumentVersion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TransactionDateTimeUTC" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="TransactionDateTimeLocal" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RequestType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RequestPollingToken" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VenderTrackingCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IneterfaceID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PollingToken" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ResultMessage">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Message" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfError">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Error" nillable="true" type="s1:Error" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Error">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Message" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="PrintRequestSoapIn">
+    <wsdl:part name="request" element="s0:PrintRequest" />
+  </wsdl:message>
+  <wsdl:message name="PrintRequestSoapOut">
+    <wsdl:part name="PrintRequestResult" element="s1:PrintResponse" />
+  </wsdl:message>
+  <wsdl:portType name="PrintSoap">
+    <wsdl:operation name="PrintRequest">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">IF-DMS-PRINT-SEND01/Print Request</wsdl:documentation>
+      <wsdl:input message="tns:PrintRequestSoapIn" />
+      <wsdl:output message="tns:PrintRequestSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PrintSoap" type="tns:PrintSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PrintRequest">
+      <soap:operation soapAction="http://wa.dms.webservice/PrintRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PrintSoap12" type="tns:PrintSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PrintRequest">
+      <soap12:operation soapAction="http://wa.dms.webservice/PrintRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Print">
+    <wsdl:port name="PrintSoap" binding="tns:PrintSoap">
+      <soap:address location="http://127.0.0.1:9099/v2/HMCIS/Print.asmx" />
+    </wsdl:port>
+    <wsdl:port name="PrintSoap12" binding="tns:PrintSoap12">
+      <soap12:address location="http://127.0.0.1:9099/v2/HMCIS/Print.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

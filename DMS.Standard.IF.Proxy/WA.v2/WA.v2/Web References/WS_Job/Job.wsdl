@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:tns="http://wa.dms.webservice/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s1="http://wa.dms.webservice/JobGetResponse" xmlns:s0="http://wa.dms.webservice/JobGetRequest" xmlns:s2="http://wa.dms.webservice/JobChangeRequest" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s3="http://wa.dms.webservice/JobChangeResponse" targetNamespace="http://wa.dms.webservice/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://wa.dms.webservice/JobGetRequest">
+      <s:element name="JobGetRequest" nillable="true" type="s0:JobGetRequest" />
+      <s:complexType name="JobGetRequest">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionHeader" type="s0:TransactionHeader" />
+          <s:element minOccurs="0" maxOccurs="1" name="JobGet" type="s0:JobGet" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TransactionHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CountryID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DistributorID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GroupID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DealerID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DMSCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DMSVersion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DMSServerUrl" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DocumentVersion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TransactionDateTimeUTC" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="TransactionDateTimeLocal" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RequestType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RequestPollingToken" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VenderTrackingCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IneterfaceID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PollingToken" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="JobGet">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="DMSAppointmentNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DMSRONo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DMSJobNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DMSJobStatus" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ScheduledDateTimeFromLocal" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ScheduledDateTimeToLocal" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="LastModifiedDateTimeFromUTC" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="LastModifiedDateTimeToUTC" nillable="true" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://wa.dms.webservice/JobGetResponse">
+      <s:element name="JobGetResponse" nillable="true" type="s1:JobGetResponse" />
+      <s:complexType name="JobGetResponse">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionHeader" type="s1:TransactionHeader" />
+          <s:element minOccurs="0" maxOccurs="1" name="ResultMessage" type="s1:ResultMessage" />
+          <s:element minOccurs="0" maxOccurs="1" name="Errors" type="s1:ArrayOfError" />
+          <s:element minOccurs="0" maxOccurs="1" name="Jobs" type="s1:ArrayOfJob" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TransactionHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CountryID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DistributorID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GroupID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DealerID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DMSCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DMSVersion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DMSServerUrl" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DocumentVersion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TransactionDateTimeUTC" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="TransactionDateTimeLocal" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RequestType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RequestPollingToken" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VenderTrackingCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IneterfaceID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PollingToken" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ResultMessage">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Message" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfError">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Error" nillable="true" type="s1:Error" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Error">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Message" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfJob">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Job" nillable="true" type="s1:Job" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Job">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="DMSJobNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DMSRONo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DMSAppointmentNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ServiceLineNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EstimatedHours" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ActualHours" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SkillLevel" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DMSJobStatus" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ManagementFields" type="s1:ManagementFields" />
+          <s:element minOccurs="0" maxOccurs="1" name="Descriptions" type="s1:ArrayOfDescription" />
+          <s:element minOccurs="0" maxOccurs="1" name="Causes" type="s1:ArrayOfCause" />
+          <s:element minOccurs="0" maxOccurs="1" name="Corrections" type="s1:ArrayOfCorrection" />
+          <s:element minOccurs="0" maxOccurs="1" name="Comments" type="s1:ArrayOfComment" />
+          <s:element minOccurs="0" maxOccurs="1" name="OPCodes" type="s1:ArrayOfOPCode" />
+          <s:element minOccurs="0" maxOccurs="1" name="Plan" type="s1:Plan" />
+          <s:element minOccurs="0" maxOccurs="1" name="Dispatch" type="s1:Dispatch" />
+          <s:element minOccurs="0" maxOccurs="1" name="Actual" type="s1:Actual" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ManagementFields">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CreateDateTimeUTC" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="LastModifiedDateTimeUTC" nillable="true" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfDescription">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Description" nillable="true" type="s1:Description" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Description">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SequenceNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DescriptionComment" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfCause">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Cause" nillable="true" type="s1:Cause" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Cause">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SequenceNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Comment" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CauseLaborOpCode" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfCorrection">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Correction" nillable="true" type="s1:Correction" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Correction">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SequenceNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Comment" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CorrectionLaborOpCode" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfComment">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Comment" nillable="true" type="s1:Comment" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Comment">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SequenceNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DescriptionComment" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfOPCode">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="OPCode" nillable="true" type="s1:OPCode" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="OPCode">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EstimatedHours" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ActualHours" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SkillLevel" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Plan">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="StallID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StallName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ScheduledDateTimeFromLocal" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ScheduledDateTimeToLocal" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Technicians" type="s1:ArrayOfTechnician" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfTechnician">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Technician" nillable="true" type="s1:Technician" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Technician">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TCEmployeeID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TCEmployeeName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Dispatch">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="StallID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StallName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ScheduledDateTimeFromLocal" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ScheduledDateTimeToLocal" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Technicians" type="s1:ArrayOfTechnician" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Actual">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="StallID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StallName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ActualTimeLogs" type="s1:ArrayOfActualTimeLog" />
+          <s:element minOccurs="0" maxOccurs="1" name="JobComments" type="s1:ArrayOfJobComment" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfActualTimeLog">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ActualTimeLog" nillable="true" type="s1:ActualTimeLog" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ActualTimeLog">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="StartDateTimeLocal" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="EndDateTimeLocal" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="TCEmployeeID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TCEmployeeName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PauseReasonCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PauseReasonComment" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfJobComment">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="JobComment" nillable="true" type="s1:JobComment" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="JobComment">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ActualWorkHour" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SubStatus" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://wa.dms.webservice/JobChangeRequest">
+      <s:element name="JobChangeRequest" nillable="true" type="s2:JobChangeRequest" />
+      <s:complexType name="JobChangeRequest">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionHeader" type="s2:TransactionHeader" />
+          <s:element minOccurs="0" maxOccurs="1" name="JobChange" type="s2:JobChange" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TransactionHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CountryID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DistributorID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GroupID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DealerID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DMSCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DMSVersion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DMSServerUrl" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DocumentVersion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TransactionDateTimeUTC" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="TransactionDateTimeLocal" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RequestType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RequestPollingToken" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VenderTrackingCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IneterfaceID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PollingToken" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="JobChange">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="DMSJobNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DMSRONo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DMSAppointmentNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ServiceLineNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EstimatedHours" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ActualHours" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SkillLevel" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DMSJobStatus" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Descriptions" type="s2:ArrayOfDescription" />
+          <s:element minOccurs="0" maxOccurs="1" name="Causes" type="s2:ArrayOfCause" />
+          <s:element minOccurs="0" maxOccurs="1" name="Corrections" type="s2:ArrayOfCorrection" />
+          <s:element minOccurs="0" maxOccurs="1" name="Comments" type="s2:ArrayOfComment" />
+          <s:element minOccurs="0" maxOccurs="1" name="OPCodes" type="s2:ArrayOfOPCode" />
+          <s:element minOccurs="0" maxOccurs="1" name="Plan" type="s2:Plan" />
+          <s:element minOccurs="0" maxOccurs="1" name="Dispatch" type="s2:Dispatch" />
+          <s:element minOccurs="0" maxOccurs="1" name="Actual" type="s2:Actual" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfDescription">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Description" nillable="true" type="s2:Description" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Description">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SequenceNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DescriptionComment" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfCause">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Cause" nillable="true" type="s2:Cause" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Cause">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SequenceNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Comment" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CauseLaborOpCode" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfCorrection">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Correction" nillable="true" type="s2:Correction" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Correction">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SequenceNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Comment" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CorrectionLaborOpCode" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfComment">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Comment" nillable="true" type="s2:Comment" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Comment">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SequenceNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DescriptionComment" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfOPCode">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="OPCode" nillable="true" type="s2:OPCode" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="OPCode">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EstimatedHours" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ActualHours" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SkillLevel" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Plan">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="StallID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StallName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ScheduledDateTimeFromLocal" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ScheduledDateTimeToLocal" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Technicians" type="s2:ArrayOfTechnician" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfTechnician">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Technician" nillable="true" type="s2:Technician" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Technician">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TCEmployeeID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TCEmployeeName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Dispatch">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="StallID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StallName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ScheduledDateTimeFromLocal" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ScheduledDateTimeToLocal" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Technicians" type="s2:ArrayOfTechnician" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Actual">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="StallID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StallName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ActualTimeLogs" type="s2:ArrayOfActualTimeLog" />
+          <s:element minOccurs="0" maxOccurs="1" name="JobComments" type="s2:ArrayOfJobComment" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfActualTimeLog">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ActualTimeLog" nillable="true" type="s2:ActualTimeLog" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ActualTimeLog">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="StartDateTimeLocal" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="EndDateTimeLocal" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="TCEmployeeID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TCEmployeeName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PauseReasonCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PauseReasonComment" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfJobComment">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="JobComment" nillable="true" type="s2:JobComment" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="JobComment">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ActualWorkHour" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SubStatus" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://wa.dms.webservice/JobChangeResponse">
+      <s:element name="JobChangeResponse" nillable="true" type="s3:JobChangeResponse" />
+      <s:complexType name="JobChangeResponse">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionHeader" type="s3:TransactionHeader" />
+          <s:element minOccurs="0" maxOccurs="1" name="ResultMessage" type="s3:ResultMessage" />
+          <s:element minOccurs="0" maxOccurs="1" name="Errors" type="s3:ArrayOfError" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TransactionHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CountryID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DistributorID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GroupID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DealerID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DMSCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DMSVersion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DMSServerUrl" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DocumentVersion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TransactionDateTimeUTC" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="TransactionDateTimeLocal" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RequestType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RequestPollingToken" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VenderTrackingCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IneterfaceID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PollingToken" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ResultMessage">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Message" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfError">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Error" nillable="true" type="s3:Error" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Error">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Message" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="JobGetSoapIn">
+    <wsdl:part name="request" element="s0:JobGetRequest" />
+  </wsdl:message>
+  <wsdl:message name="JobGetSoapOut">
+    <wsdl:part name="JobGetResult" element="s1:JobGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="JobChangeSoapIn">
+    <wsdl:part name="request" element="s2:JobChangeRequest" />
+  </wsdl:message>
+  <wsdl:message name="JobChangeSoapOut">
+    <wsdl:part name="JobChangeResult" element="s3:JobChangeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="JobSoap">
+    <wsdl:operation name="JobGet">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">IF-DMS-JOB-R01/Job Get</wsdl:documentation>
+      <wsdl:input message="tns:JobGetSoapIn" />
+      <wsdl:output message="tns:JobGetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="JobChange">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">IF-DMS-JOB-U01/Job Change</wsdl:documentation>
+      <wsdl:input message="tns:JobChangeSoapIn" />
+      <wsdl:output message="tns:JobChangeSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="JobSoap" type="tns:JobSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="JobGet">
+      <soap:operation soapAction="http://wa.dms.webservice/JobGet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="JobChange">
+      <soap:operation soapAction="http://wa.dms.webservice/JobChange" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="JobSoap12" type="tns:JobSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="JobGet">
+      <soap12:operation soapAction="http://wa.dms.webservice/JobGet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="JobChange">
+      <soap12:operation soapAction="http://wa.dms.webservice/JobChange" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Job">
+    <wsdl:port name="JobSoap" binding="tns:JobSoap">
+      <soap:address location="http://127.0.0.1:9099/v2/Common/Job.asmx" />
+    </wsdl:port>
+    <wsdl:port name="JobSoap12" binding="tns:JobSoap12">
+      <soap12:address location="http://127.0.0.1:9099/v2/Common/Job.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

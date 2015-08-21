@@ -1,0 +1,160 @@
+2015-08-13 13:33:31,373 : [120] DealerID[] ObjectName[WA AppointmentGetRequest XML]
+<?xml version="1.0"?>
+<AppointmentGetRequest xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://wa.dms.webservice/AppointmentGetRequest">
+  <TransactionHeader>
+    <CountryID />
+    <DistributorID>Common</DistributorID>
+    <GroupID>WA</GroupID>
+    <DealerID />
+    <DMSCode>WA</DMSCode>
+    <DMSVersion>v2</DMSVersion>
+    <DMSServerUrl>http://195.68.151.26:9098</DMSServerUrl>
+    <DocumentVersion>v2</DocumentVersion>
+    <Username>AdminWS</Username>
+    <Password>1114</Password>
+    <TransactionId />
+    <TransactionDateTimeUTC xsi:nil="true" />
+    <TransactionDateTimeLocal xsi:nil="true" />
+    <TransactionType />
+    <RequestType />
+    <RequestPollingToken />
+    <VenderTrackingCode />
+    <IneterfaceID />
+    <PollingToken />
+  </TransactionHeader>
+  <AppointmentGet>
+    <DMSAppointmentNo>445111111111</DMSAppointmentNo>
+    <DMSAppointmentID />
+    <AppointmentDateTimeFromLocal xsi:nil="true" />
+    <AppointmentDateTimeToLocal xsi:nil="true" />
+    <LastModifiedDateTimeFromUTC xsi:nil="true" />
+    <LastModifiedDateTimeToUTC xsi:nil="true" />
+    <DMSAppointmentStatus />
+    <SAEmployeeID />
+    <SAEmployeeName />
+    <TCEmployeeID />
+    <TCEmployeeName />
+    <Customer>
+      <DMSCustomerNo />
+      <LastName>ENTERPRISE RENT A CAR11111111111111111111111111</LastName>
+      <Contacts>
+        <Contact>
+          <ContactType />
+          <ContactValue />
+        </Contact>
+      </Contacts>
+    </Customer>
+    <Vehicle>
+      <DMSVehicleNo />
+      <VIN />
+      <LastSixVIN />
+    </Vehicle>
+  </AppointmentGet>
+</AppointmentGetRequest>
+2015-08-13 13:33:31,407 : [120] DealerID[] ObjectName[DMS AppointmentGetRequest XML]
+<?xml version="1.0"?>
+<AppointmentGetRequest xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <TransactionHeader xmlns="http://wa.dms.webservice/AppointmentGetRequest">
+    <CountryID />
+    <DistributorID>Common</DistributorID>
+    <GroupID>WA</GroupID>
+    <DealerID />
+    <DMSCode>WA</DMSCode>
+    <DMSVersion>v2</DMSVersion>
+    <DMSServerUrl>http://195.68.151.26:9098</DMSServerUrl>
+    <DocumentVersion>v2</DocumentVersion>
+    <Username>AdminWS</Username>
+    <Password>1114</Password>
+    <TransactionId />
+    <TransactionDateTimeUTC xsi:nil="true" />
+    <TransactionDateTimeLocal xsi:nil="true" />
+    <TransactionType />
+    <RequestType />
+    <RequestPollingToken />
+    <VenderTrackingCode />
+    <IneterfaceID />
+    <PollingToken />
+  </TransactionHeader>
+  <AppointmentGet xmlns="http://wa.dms.webservice/AppointmentGetRequest">
+    <DMSAppointmentNo>445111111111</DMSAppointmentNo>
+    <DMSAppointmentID />
+    <AppointmentDateTimeFromLocal xsi:nil="true" />
+    <AppointmentDateTimeToLocal xsi:nil="true" />
+    <LastModifiedDateTimeFromUTC xsi:nil="true" />
+    <LastModifiedDateTimeToUTC xsi:nil="true" />
+    <DMSAppointmentStatus />
+    <SAEmployeeID />
+    <SAEmployeeName />
+    <TCEmployeeID />
+    <TCEmployeeName />
+    <Customer>
+      <DMSCustomerNo />
+      <LastName>ENTERPRISE RENT A CAR11111111111111111111111111</LastName>
+      <Contacts>
+        <Contact>
+          <ContactType />
+          <ContactValue />
+        </Contact>
+      </Contacts>
+    </Customer>
+  </AppointmentGet>
+</AppointmentGetRequest>
+2015-08-13 13:33:31,443 : [120] DealerID[] ObjectName[DMS AppointmentGetResponse XML]
+<?xml version="1.0"?>
+<AppointmentGetResponse xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <TransactionHeader xmlns="http://wa.dms.webservice/AppointmentGetResponse">
+    <CountryID />
+    <DistributorID>Common</DistributorID>
+    <GroupID>WA</GroupID>
+    <DealerID />
+    <DMSCode>WA</DMSCode>
+    <DMSVersion>v2</DMSVersion>
+    <DMSServerUrl>http://195.68.151.26:9098</DMSServerUrl>
+    <DocumentVersion>v2</DocumentVersion>
+    <Username>AdminWS</Username>
+    <Password>1114</Password>
+    <TransactionId />
+    <TransactionDateTimeUTC xsi:nil="true" />
+    <TransactionDateTimeLocal xsi:nil="true" />
+    <TransactionType />
+    <RequestType />
+    <RequestPollingToken />
+    <VenderTrackingCode />
+    <IneterfaceID />
+    <PollingToken />
+  </TransactionHeader>
+  <ResultMessage xmlns="http://wa.dms.webservice/AppointmentGetResponse">
+    <Code>0</Code>
+    <Message>No data found</Message>
+  </ResultMessage>
+  <Appointments xmlns="http://wa.dms.webservice/AppointmentGetResponse" />
+</AppointmentGetResponse>
+2015-08-13 13:33:31,447 : [120] DealerID[] ObjectName[WA AppointmentGetResponse XML]
+<?xml version="1.0"?>
+<AppointmentGetResponse xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://wa.dms.webservice/AppointmentGetResponse">
+  <TransactionHeader>
+    <CountryID />
+    <DistributorID>Common</DistributorID>
+    <GroupID>WA</GroupID>
+    <DealerID />
+    <DMSCode>WA</DMSCode>
+    <DMSVersion>v2</DMSVersion>
+    <DMSServerUrl>http://195.68.151.26:9098</DMSServerUrl>
+    <DocumentVersion>v2</DocumentVersion>
+    <Username>AdminWS</Username>
+    <Password>1114</Password>
+    <TransactionId />
+    <TransactionDateTimeUTC xsi:nil="true" />
+    <TransactionDateTimeLocal xsi:nil="true" />
+    <TransactionType />
+    <RequestType />
+    <RequestPollingToken />
+    <VenderTrackingCode />
+    <IneterfaceID />
+    <PollingToken />
+  </TransactionHeader>
+  <ResultMessage>
+    <Code>0</Code>
+    <Message>No data found</Message>
+  </ResultMessage>
+</AppointmentGetResponse>
